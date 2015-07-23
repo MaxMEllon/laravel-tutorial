@@ -24,9 +24,13 @@ mysql> grant create on `demo_blog`.* to maxmellon@localhost;
 mysql> grant drop on `demo_blog`.* to maxmellon@localhost;
 ```
 
-## migration
+## make:
 ```
 $ ./artisan make:migration create_[table_name]s_table
+# example
+$ ./artisan make:migration create_articles_table
+$ ./artisan make:model Article
+$./ artisan make:controller ArticleController
 ```
 
 ## migrate
