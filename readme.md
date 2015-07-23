@@ -2,6 +2,18 @@
 
 larabel練習用repository
 
+## run server
+```bash
+$ ./artisan serve --host 0.0.0.0
+```
+
+## mysql
+```
+$ sudo service mysqld start
+$ sudo mysql  # database user をrootにした時．
+mysql -> create database [database_name]
+```
+
 ### Laravel PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
