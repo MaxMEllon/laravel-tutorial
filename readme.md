@@ -15,14 +15,25 @@ $ chmod -R 777 storage
 ## mysql
 ```
 $ sudo service mysqld start
-$ sudo mysql  # database user をrootにした時．
-mysql -> create database [database_name]
+$ mysql -u [user_name]
+mysql> create database [database_name] character set utf8;
+mysql> create user maxmellon;
+mysql> grant insert on `demo_blog`.* to maxmellon@localhost;
+mysql> grant select on `demo_blog`.* to maxmellon@localhost;
+mysql> grant create on `demo_blog`.* to maxmellon@localhost;
+mysql> grant drop on `demo_blog`.* to maxmellon@localhost;
 ```
 
 ## migration
 ```
 $ ./artisan make:migration create_[table_name]s_table
 ```
+
+## migrate
+```
+$ ./artisan migrate
+```
+
 
 ## Quotation
 
